@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario Dinamico</title>
+    
+    <!-- STYLECSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICONOX ICONBOX -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- SIMBOLOS/ICONOS GOOGLE -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+</head>
+<body>
+    
+    <!-- Calendario -->
+    <div class="wrapper">
+        <header>
+            <div class="nav_btns">
+
+                <!-- BOTON DE TEMA OSCURO/CLARO -->
+                <i class="bx bx-moon change-theme" id="theme-button"></i>
+                
+            </div>
+            <p class="current-date">Septiembre 2022</p>
+            <div class="icons">
+                <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                <span id="next" class="material-symbols-rounded">chevron_right</span>
+            </div>
+        </header>
+
+        <div class="calendar">
+            <ul class="semanas">
+                <li>Dom</li>
+                <li>Lun</li>
+                <li>Mar</li>
+                <li>Mié</li>
+                <li>Jue</li>
+                <li>Vie</li>
+                <li>Sáb</li>
+            </ul>
+
+            <ul class="days"></ul>
+        </div>
+    </div>
+
+
+    <script src="main.js" defer></script>
+</body>
+</html>
